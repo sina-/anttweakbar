@@ -6492,7 +6492,7 @@ static XErrorHandler s_PrevErrorHandler = NULL;
 
 static int InactiveErrorHandler(Display *display, XErrorEvent *err)
 {
-    fprintf(stderr, "Ignoring Xlib error: error code %d request code %d\n", err->error_code, err->request_code);
+    // fprintf(stderr, "Ignoring Xlib error: error code %d request code %d\n", err->error_code, err->request_code);
     // No exit!
     return 0 ;
 }
